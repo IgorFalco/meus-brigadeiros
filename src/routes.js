@@ -5,20 +5,37 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Produtos from "./pages/Produtos";
 import Perfil from "./pages/Perfil";
-
+import Header from "./pages/Header";
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/login" component={Login} />
-                <Route path="/cadastro" component={Cadastro} />
-                <Route path="/home" component={Home} />
-                <Route path="/perfil" component={Perfil} />
-                <Route path="/produtos" component={Produtos} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/cadastro" component={Cadastro} />
+                <Route path="/" component={UserMenu} />
+                <Route exact path="/perfil" component={Perfil} />
+                <Route exact path="/produtos" component={Produtos} />
+                <Route exact path="/temp" component={Header} />
             </Switch>
         </BrowserRouter>
     );
+
+    function UserMenu() {
+        return (
+            <Header>
+                <Switch>
+                    <Route exact path="/home" component={Home} />
+                    <Route exact path="/login" component={Login} />
+                    <Route exact path="/cadastro" component={Cadastro} />
+                    <Route exact path="/perfil" component={Perfil} />
+                    <Route exact path="/produtos" component={Produtos} />
+                    <Route component={() => <Redirect to="login" />} />
+                </Switch>
+            </Header>
+        )
+    }
 }
 
 export default Routes;
