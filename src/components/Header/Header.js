@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-
+import Footer from "../Footer";
 
 function Header(props) {
     return (
@@ -33,6 +33,10 @@ function Header(props) {
                 </header>
             </div>
             {props.children}
+            <div>
+                <Footer />
+            </div>
+
         </div>
 
 
