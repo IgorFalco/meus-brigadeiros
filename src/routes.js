@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Produtos from "./pages/Produtos";
 import Perfil from "./pages/Perfil";
 import Header from "./components/Header";
+import Carrossel from "./components/Carrossel";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 function Routes() {

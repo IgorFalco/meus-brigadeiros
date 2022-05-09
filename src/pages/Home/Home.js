@@ -1,9 +1,11 @@
 import React from "react";
+import Carrossel from "../../components/Carrossel/Carrossel";
+import "./Home.css";
 
 function Home() {
     return(
         <div>
-            <h1>Home</h1>
+            <Carrossel></Carrossel>
         </div>
     );
 }
