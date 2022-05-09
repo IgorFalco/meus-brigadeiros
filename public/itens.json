@@ -1,0 +1,129 @@
+[
+  {
+    "id": "94313dd731",
+    "name": "Tdoce1" ,
+    "price": 249.99,
+   
+    "image": "/static/images/brigadeiro-rainbow1.png"
+  },
+  {
+    "id": "94313762",
+    "name": "Tdoce1",
+    "price": 249.99,
+   
+    "image": "/static/images/Imagem-1.png"
+  },
+  
+  { 
+    "id": "943137XQ",
+    "name": "doce1",
+    "price": 249.99,
+   
+    "image": "/static/images/Imagem-2.png"
+  },
+  {
+    "id": "95077714",
+    "name": "Tdoce1",
+    "price": 199.99,
+    
+    "image": "/static/images/Imagem-3.png"
+  },
+  {
+    "id": "9507779N",
+    "name": "doce1",
+    "price": 199.99,
+      "image": "/static/images/Imagem-4.png"
+  },
+  {
+    "id": "92601102",
+    "name": "doce1",
+    "price": 449.99,
+    
+    "image": "/static/images/Imagem-5.png"
+  },
+  {
+    "id": "9465450R",
+    "name": "doce1",
+    "price": 279.99,
+  
+    "image": "/static/images/Imagem-6.png"
+  },
+  {
+    "id": "95004531",
+    "name": "doce1",
+    "price": 299.99,
+    
+    "image": "/static/images/Imagem-7.png"
+  },
+  {
+    "id": "94672705",
+    "name": "doce1",
+    "price": 179.99,
+    
+    "image": "/static/images/Imagem-8.png"
+  },
+  {
+    "id": "94313dd731",
+    "name": "Tdoce1" ,
+    "price": 249.99,
+   
+    "image": "/static/images/brigadeiro-rainbow1.png"
+  },
+  {
+    "id": "94313762",
+    "name": "Tdoce1",
+    "price": 249.99,
+   
+    "image": "/static/images/Imagem-1.png"
+  },
+  
+  { 
+    "id": "943137XQ",
+    "name": "doce1",
+    "price": 249.99,
+   
+    "image": "/static/images/Imagem-2.png"
+  },
+  {
+    "id": "95077714",
+    "name": "Tdoce1",
+    "price": 199.99,
+    
+    "image": "/static/images/Imagem-3.png"
+  },
+  {
+    "id": "9507779N",
+    "name": "doce1",
+    "price": 199.99,
+      "image": "/static/images/Imagem-4.png"
+  },
+  {
+    "id": "92601102",
+    "name": "doce1",
+    "price": 449.99,
+    
+    "image": "/static/images/Imagem-5.png"
+  },
+  {
+    "id": "9465450R",
+    "name": "doce1",
+    "price": 279.99,
+  
+    "image": "/static/images/Imagem-6.png"
+  },
+  {
+    "id": "95004531",
+    "name": "doce1",
+    "price": 299.99,
+    
+    "image": "/static/images/Imagem-7.png"
+  },
+  {
+    "id": "94672705",
+    "name": "doce1",
+    "price": 179.99,
+    
+    "image": "/static/images/Imagem-8.png"
+  }
+  
+]
