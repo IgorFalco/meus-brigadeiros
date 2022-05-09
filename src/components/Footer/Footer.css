@@ -1,14 +1,13 @@
-
-.base{
-    margin-left: -8px;
-    margin-bottom: -10px;
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE4E4;
 }
 
 .topo {
     display: flex;
     flex-direction: column;
-    background-color: #FFE4E4;
-    width: 101%;
+    width: 100%;
     height: 180px;
     align-items: center;
     justify-content: center;
@@ -19,7 +18,9 @@
     width: 100%;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 
 }
 
@@ -55,14 +56,13 @@
 }
 
 p {
-    white-space: nowrap;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 27px;
     line-height: 33px;
-
     color: #B38130;
+    white-space: wrap;
 }
 
 .cadastro {
@@ -72,14 +72,12 @@ p {
 
 .meio {
     display: flex;
-    background-color: #FFE4E4;
-    width: 101%;
+    width: 100%;
     height: 370px;
 }
 
 .baixo {
     display: flex;
-    background-color: #FFE4E4;
     width: 101%;
     height: 150px;
 }
@@ -92,7 +90,9 @@ p {
 .conteudos {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
 .colunas {
@@ -134,7 +134,7 @@ h2 {
     line-height: 29px;
 }
 
-.logoMeio{
+.logoMeio {
     position: relative;
     top: 24px;
 
@@ -143,23 +143,365 @@ h2 {
 .baixo {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .conteudosBaixo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    gap: 850px;
+    justify-content: space-between;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
-.redesSociais{
+.redesSociais {
     display: flex;
     gap: 20px;
 }
 
-.texto{
+.texto {
     color: #000000;
     font-size: 20px;
+}
+
+@media (max-width: 1300px) {
+    .base {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -8px;
+        margin-bottom: -10px;
+    }
+
+    .topo {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFE4E4;
+        width: 100%;
+        height: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .elementos-topo {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+
+    .separador {
+        display: flex;
+        border-color: #B38130;
+        width: 100%;
+        height: 0px;
+    }
+
+    .seu-email {
+        height: 54px;
+        width: 400px;
+        background: #b3813080;
+        border-radius: 10px 0px 0px 10px;
+        border: none;
+    }
+
+    .seu-email::placeholder {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-size: 17px;
+        color: #67472F;
+    }
+
+    .botao-cadastro {
+        background: #67472F;
+        border-radius: 10px;
+        height: 56px;
+        width: 140px;
+        border: none;
+        margin-left: -20px;
+    }
+
+    p {
+        white-space: wrap;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 33px;
+
+        color: #B38130;
+    }
+
+    .cadastro {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .meio {
+        display: flex;
+        background-color: #FFE4E4;
+        width: 100%;
+        height: 100%;
+    }
+
+    .baixo {
+        display: flex;
+        background-color: #FFE4E4;
+        width: 101%;
+        height: 150px;
+    }
+
+    .conteudos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+        flex-wrap: wrap;
+        row-gap: 60px;
+    }
+
+    .colunas {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .coluna1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .coluna2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .coluna3 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .link {
+        color: #000000;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    h2 {
+        color: #B38130;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 29px;
+    }
+
+    .logoMeio {
+        position: relative;
+        top: 24px;
+
+    }
+
+    .baixo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .conteudosBaixo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+
+    .redesSociais {
+        display: flex;
+        gap: 20px;
+    }
+
+    .texto {
+        color: #000000;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .base {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .topo {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFE4E4;
+        width: 100%;
+        height: 100%;
+        padding-top: 7.5%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .elementos-topo {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .separador {
+        display: flex;
+        border-color: #B38130;
+        width: 100%;
+        height: 0px;
+    }
+
+    .seu-email {
+        height: 54px;
+        width: 400px;
+        background: #b3813080;
+        border-radius: 10px 10px 10px 10px;
+        border: none;
+    }
+
+    .seu-email::placeholder {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-size: 17px;
+        color: #67472F;
+    }
+
+    .botao-cadastro {
+        background: #67472F;
+        border-radius: 10px;
+        height: 56px;
+        width: 140px;
+        border: none;
+        margin-left: -20px;
+    }
+
+    p {
+        white-space: wrap;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 33px;
+        text-align: center;
+
+
+        color: #B38130;
+    }
+
+    .cadastro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .meio {
+        display: flex;
+        background-color: #FFE4E4;
+        width: 100%;
+        height: 100%;
+    }
+
+    .baixo {
+        display: flex;
+        background-color: #FFE4E4;
+        width: 101%;
+        height: 150px;
+    }
+
+    .conteudos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 60px;
+    }
+
+    .colunas {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        flex-wrap: wrap;
+    }
+
+    .coluna1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .coluna2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .coluna3 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .link {
+        color: #000000;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    h2 {
+        color: #B38130;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 29px;
+    }
+
+    .logoMeio {
+        position: relative;
+        top: 24px;
+
+    }
+
+    .baixo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .conteudosBaixo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10%;
+        row-gap: 2%;
+    }
+
+    .redesSociais {
+        display: flex;
+        gap: 20px;
+    }
+
+    .texto {
+        color: #000000;
+        font-size: 20px;
+    }
 }

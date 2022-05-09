@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
-.container {
+.header {
     display: flex;
     background-color: #FFE4E4;
-    width: 101%;
+    width: 100%;
     height: 85px;
-    margin-top: -8px;
-    margin-left: -8px;
 }
 
 
@@ -14,21 +12,102 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 85px;
+    width: 200%;
+    height: 100%;
 }
-.vetores{
+
+.vetores {
     display: flex;
     gap: 20px;
 }
-.navbar{
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 45px;
 }
+
 .links {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        display: flex;
+        background-color: #FFE4E4;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .elementos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .vetores {
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 45px;
+        flex-wrap: wrap;
+    }
+
+    .links {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        background-color: #FFE4E4;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .elementos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .vetores {
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 45px;
+        flex-wrap: wrap;
+    }
+
+    .links {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+    }
 }

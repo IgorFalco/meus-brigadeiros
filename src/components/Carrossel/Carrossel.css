@@ -1,0 +1,11 @@
+.carousel{
+    display: flex;
+    max-height: 500px;
+    width: 100%;
+}
+
+.carousel-inner{
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+}

@@ -5,7 +5,7 @@ import Footer from "../Footer";
 function Header(props) {
     return (
         <div className="base">
-            <div className="container">
+            <div className="header">
                 <header className="elementos">
                     <div className="logobrigadeiros">
                         <a href="temp" className="links">

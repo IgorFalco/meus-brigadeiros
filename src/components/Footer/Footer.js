@@ -4,10 +4,10 @@ import "./Footer.css";
 
 function Footer() {
     return (
-        <div className="base">
+        <div className="footer">
             <div className="topo">
                 <div className="elementos-topo">
-                    <p>Receba as novidades em primeira mão. Cadastre-se</p>
+                        <p>Receba as novidades em primeira mão. Cadastre-se</p>
                     <div className="cadastro">
                         <input className="seu-email"
                             placeholder="Seu melhor email"
