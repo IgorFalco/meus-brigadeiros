@@ -1,18 +1,12 @@
 import React from "react";
 import Carrossel from "../../components/Carrossel/Carrossel";
-import "./Home.css";
-import Frame from "./Frame/Frame";
-import "./home.css"
-
+import Frame from "../../components/Frame/Frame";
 
 function Home() {
-    return(
+    return (
         <div>
             <Carrossel></Carrossel>
-            <h1>Home</h1>
-            <div className="mais-queridos">
-                <Frame/>
-            </div>
+            <Frame />
         </div>
 
     );

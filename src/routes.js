@@ -6,7 +6,6 @@ import Login from "./pages/Login";
 import Produtos from "./pages/Produtos";
 import Perfil from "./pages/Perfil";
 import Header from "./components/Header";
-import Carrossel from "./components/Carrossel";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 function Routes() {
@@ -27,6 +26,9 @@ function Routes() {
                     <Route exact path="/cadastro" component={Cadastro} />
                     <Route exact path="/perfil" component={Perfil} />
                     <Route exact path="/produtos" component={Produtos} />
+                    <Route exact path="/donuts" component={Produtos} />
+                    <Route exact path="/doces" component={Produtos} />
+                    <Route exact path="/bolos" component={Produtos} />
                     <Route component={() => <Redirect to="home" />} />
                 </Switch>
             </Header>
