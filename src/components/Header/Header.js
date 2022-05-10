@@ -16,7 +16,7 @@ function Header(props) {
                         <a href="home" className="links">Home</a>
                         <a href="produtos" className="links">Produtos</a>
                         <a href="quemsomos" className="links">Quem Somos?</a>
-                        <a href="fidelidade" className="links">Fidelidade</a>
+                        <a href="cadastro" className="links">Cadastre-se</a>
                         <div className="vetores">
                             <a href="perfil" className="icones">
                                 <img src="/images/Perfil.png" alt="logo" />

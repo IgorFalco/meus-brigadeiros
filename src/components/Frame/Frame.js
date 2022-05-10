@@ -6,9 +6,11 @@ import { GrFavorite } from "react-icons/gr"
 export default function Frame() {
   return (
     <div className="frame">
-      <div className="title">
+      <div className="maisquerido">
         <h1>Mais queridos</h1>
       </div>
+
+
 
       <div className="produtos">
         <div className="component">
