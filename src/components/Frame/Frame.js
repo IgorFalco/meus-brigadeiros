@@ -9,9 +9,6 @@ export default function Frame() {
       <div className="maisquerido">
         <h1>Mais queridos</h1>
       </div>
-
-
-
       <div className="produtos">
         <div className="component">
           <img src="/images/brigadeiro-rainbow.jpg" alt="brigadeiro" className="image" />

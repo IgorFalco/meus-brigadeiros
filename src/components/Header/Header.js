@@ -12,10 +12,10 @@ function Header(props) {
                             <img src="/images/Logo_Header.png" alt="logo" />
                         </a>
                     </div>
-                    <div className="navbar">
+                    <div className="navegacao">
                         <a href="home" className="links">Home</a>
                         <a href="produtos" className="links">Produtos</a>
-                        <a href="quemsomos" className="links">Quem Somos?</a>
+                        <a href="login" className="links">Login</a>
                         <a href="cadastro" className="links">Cadastre-se</a>
                         <div className="vetores">
                             <a href="perfil" className="icones">
@@ -29,14 +29,10 @@ function Header(props) {
                             </a>
                         </div>
                     </div>
-
                 </header>
             </div>
             {props.children}
-            <div>
                 <Footer />
-            </div>
-
         </div>
 
 

@@ -24,9 +24,13 @@ function Cadastro() {
                             <input type="text" />
                         </label>
                     </div>
-                    <label for="palavras">Se descreva com palavras mais doces... :</label>
 
-                    <input type="text" id="palavras" className="palavras" />
+                    <div className="campop">
+                        <label for="palavras">Se descreva com palavras mais doces... :</label>
+
+                        <input type="text" id="palavras" className="palavras" />
+                    </div>
+
 
                     <div className="campo">
                         <label>Senha:

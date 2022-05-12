@@ -7,7 +7,6 @@ import Produtos from "./pages/Produtos";
 import Perfil from "./pages/Perfil";
 import Header from "./components/Header";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
-
 function Routes() {
     return (
         <BrowserRouter>
