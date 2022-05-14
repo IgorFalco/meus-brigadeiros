@@ -1,42 +1,63 @@
-.frame {
+.bolos {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     max-height: 100%;
     height: 100%;
-    background: #FF88BB;
+    background: white;
 }
 
-#title {
+#titulo {
     display: flex;
     font-family: 'Amatic SC', cursive;
-    font-size: 100px;
-    font-weight: 700;
-    margin-left: 150px;
+    font-weight: 900;
+    font-size: 150px;
+    margin-top: 10%;
+    justify-content: center;
 }
 
-.produtos {
+.linha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 5px;
+    left: 551px;
+    top: 337px;
+    background: #B38130;
+}
+
+.titulo_linha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fileira {
+
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
-    margin-top: 2%;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    margin-right: 150px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.component {
+.componente {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.image {
+.imagem {
     border-radius: 15px;
     border: 3px solid #B38130;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-#text {
+#texto {
     display: flex;
     flex-direction: row;
     font-family: 'Amatic SC', cursive;
@@ -44,12 +65,12 @@
     font-weight: 700;
 }
 
-.preco-favorito {
+.preco_favorito {
     display: flex;
     flex-direction: row;
 }
 
-.favorito {
+.coracao {
     display: flex;
     flex-direction: row;
     margin-left: 220px;
@@ -59,16 +80,15 @@
 /* fazer um css todo novo dentro desse media */
 
 @media (max-width:700px) {
-    .frame {
+    .bolos {
         display: flex;
         flex-direction: column;
         max-width: 100%;
         max-height: 100%;
         height: 100%;
-        background: #FF88BB;
     }
 
-    .title {
+    .titulo {
         display: flex;
         font-family: 'Amatic SC', cursive;
         font-size: 10mm;
@@ -77,7 +97,7 @@
 
     }
 
-    .produtos {
+    .fileira {
 
         display: flex;
         flex-direction: row;
@@ -88,31 +108,31 @@
         flex-wrap: wrap;
     }
 
-    .component {
+    .componente {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .image {
+    .imagem {
         border-radius: 15px;
         border: 3px solid #B38130;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     }
 
-    .text {
+    .texto{
         display: flex;
         flex-direction: row;
         font-family: 'Amatic SC', cursive;
         font-size: 9mm;
     }
 
-    .preco-favorito {
+    .preco_favorito {
         display: flex;
         flex-direction: row;
     }
 
-    .favorito {
+    .coracao {
         display: flex;
         flex-direction: row;
         margin-left: 220px;
