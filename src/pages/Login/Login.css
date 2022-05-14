@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter:wght@300;600&display=swap');
+
+.página {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 100%;
+    justify-content: space-between;
+}
+
+.EsquerdaPagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    gap: 30px;
+}
+
+.DireitaPagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20%;
+    gap: 20px;
+}
+
+.tituloLogin h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #964C1A;
+}
+
+.inputLogin input {
+    display: flex;
+    width: 314px;
+    height: 50px;
+    left: 301px;
+    top: 230px;
+
+    background: #FEFEFE;
+    border: 2px solid #B38130;
+    border-radius: 45px;
+}
+
+#entrarLogin {
+
+    width: 164px;
+    height: 56px;
+    left: 376px;
+    top: 421px;
+    background: #FF88BB;
+    border-radius: 45px;
+
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    /* identical to box height */
+    color: #FEFEFE;
+
+}
+
+.ou {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-family: 'Inter', sans-serif;
+    color: #B38130;
+    font-weight: 300;
+    font-size: 28px;
+
+
+}
+
+#barraEsquerda {
+    width: 237px;
+    height: 1px;
+    background: rgb(179, 129, 48);
+}
+
+.naoPossuiConta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.naoPossuiConta h1 {
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #964C1A;
+
+}
+
+.naoPossuiConta button {
+
+    width: 326px;
+    height: 64px;
+    left: 296px;
+    top: 655px;
+    background: rgba(179, 129, 48, 0.78);
+    border-radius: 45px;
+    border: none;
+
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.tituloDireita h1 {
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 73px;
+    text-align: center;
+
+    color: #964C1A;
+}
+
+.subtituloLogin h2 {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+
+    color: #B38130;
+}
+
+#separadorMeio {
+    height: 100vh;
+    width: 1px;
+    border-width: 0;
+    background-color: #B38130;
+}
+
+@media (max-width:1400px){
+    .DireitaPagina{
+    }
+} 

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter:wght@300;600&display=swap');
+
+.paginaCadastro {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 100%;
+    justify-content: space-between;
+}
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    gap: 20px;
+
+    width: 60%;
+}
+
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    width: 40%;
+    gap: 20px;
+}
+
+.boasvindas {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.boasvindas p {
+    white-space: nowrap;
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    /* identical to box height */
+
+    letter-spacing: 0.035em;
+    width: 100%;
+}
+
+.boasvindas h1 {
+    white-space: nowrap;
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    /* identical to box height */
+
+    letter-spacing: 0.035em;
+}
+
+#perfil {
+    display: flex;
+    border-radius: 50%;
+    border: 5px solid #87C7E2;
+    size: 20px;
+
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+#editarperfil {
+
+    width: 233px;
+    height: 41px;
+    left: 222px;
+    top: 476px;
+    background-color: #87C7E2;
+    border-radius: 22px;
+    border: none;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+#logout {
+
+    width: 233px;
+    height: 41px;
+    left: 222px;
+    top: 476px;
+    background-color: #87C7E2;
+    border-radius: 22px;
+    border: none;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+
+    align-items: baseline;
+    gap: 10px;
+}
+
+.dados h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 100;
+}
+
+.linha p {
+    font-family: 'Amatic SC', cursive;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.textinhoTitulo {
+
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#descricaoBox {
+
+    width: 100%;
+    height: 200px;
+
+    background: rgba(93, 95, 239, 0.15);
+    border: 3px solid #87C7E2;
+    border-radius: 29px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.carroselteste {
+    width: 80%;
+    height: 40%;
+
+    background-color: blue;
+}
+
+#descricao {
+
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.labellabel {
+    display: flex;
+    align-items: baseline; 
+    gap: 5px;
+}
