@@ -12,19 +12,19 @@ function Perfil() {
                 <img src="/images/PerfilRosto.jpg" alt="foto de perfil" id="perfil"></img>
                 <input id="editarperfil" type="submit" value="Editar Perfil" />
                 <div className="dados">
-                    <div className="linha">
+                    <div className="linhaPerfil">
 
                         <h1>Nome:</h1> <p>Ana Clara</p>
                     </div>
-                    <div className="linha">
+                    <div className="linhaPerfil">
                         <h1>Email:</h1> <p>anaclara@email.com.br</p>
 
                     </div>
-                    <div className="linha">
+                    <div className="linhaPerfil">
                         <h1>Número:</h1> <p>+55 31 12345-6789</p>
 
                     </div>
-                    <div className="linha">
+                    <div className="linhaPerfil">
                         <h1>Endereço:</h1> <p>Rua Doce, 123, Brigadeiro, Docelândia - MG</p>
                     </div>
                 </div>

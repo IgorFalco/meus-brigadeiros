@@ -117,7 +117,7 @@
     flex-direction: column;
 }
 
-.linha {
+.linhaPerfil {
     display: flex;
     flex-direction: row;
 
@@ -130,7 +130,7 @@
     font-weight: 100;
 }
 
-.linha p {
+.linhaPerfil p {
     font-family: 'Amatic SC', cursive;
     font-style: bold;
     font-weight: 700;

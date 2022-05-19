@@ -1,17 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+.AdoceSeuDiaParte {
+  display: flex;
+  flex-direction: column;
+  background-color: #FCDDEC;
+  max-height: 100%;
+  padding-bottom: 5%;
+  gap: 100px;
+}
+
+.tituloAdoce h1 {
+  font-family: 'Amatic SC', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 140px;
+  padding-left: 10%;
+  white-space: nowrap;
+}
+
 .App {
-    font-family: Amatic SC;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
-  }
-  
-  .container{
+  font-family: Amatic SC;
   display: flex;
   align-items: center;
-    justify-content: center;
-    height: 10vh;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
   background-color: #FCDDEC;
-  
-  }
+
+}
