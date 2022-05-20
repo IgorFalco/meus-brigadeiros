@@ -5,7 +5,7 @@
     flex-direction: column;
     max-width: 100%;
     max-height: 100%;
-    background: #FF88BB;
+    background: white;
 }
 
 #title {
@@ -61,11 +61,12 @@
     flex-direction: row;
 }
 
-.favorito {
+.botaofavorito {
     display: flex;
     flex-direction: row;
     margin-left: 220px;
-
+    background: #FF88BB;
+    
 }
 
 /* fazer um css todo novo dentro desse media */
@@ -76,7 +77,6 @@
         flex-direction: column;
         max-width: 100%;
         max-height: 100%;
-        background: #FF88BB;
     }
 
     .title {

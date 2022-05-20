@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import "./frame.css"
-import { GrFavorite } from "react-icons/gr"
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
 
 export default function Frame() {
+  const [clicks, setClicks] = useState([]);
+    
+    const handleIconClick = (id) => {
+        let result =  clicks.includes(id)? clicks.filter(click => click !== id): [...clicks, id]
+        setClicks(result)
+   }
+  
   return (
     <div className="frame">
       <div className="maisquerido">
@@ -16,7 +24,9 @@ export default function Frame() {
 
           <div className="preco-favorito">
             <h4 id="text">R$ 14,90</h4>
-            <GrFavorite className="favorito" size={30} />
+            <button className="botaofavorito" onClick={() => handleIconClick(0)}>
+                {clicks.includes(0) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32}}/>}
+            </button>
           </div>
         </div>
 
@@ -26,7 +36,9 @@ export default function Frame() {
 
           <div className="preco-favorito">
             <h4 id="text">R$ 5,00</h4>
-            <GrFavorite className="favorito" size={30} />
+            <button className="botaofavorito" onClick={() => handleIconClick(1)}>
+               {clicks.includes(1) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
+            </button>
           </div>
 
         </div>
@@ -37,7 +49,9 @@ export default function Frame() {
 
           <div className="preco-favorito">
             <h4 id="text">R$ 10,60</h4>
-            <GrFavorite className="favorito" size={30} />
+            <button className="botaofavorito" onClick={() => handleIconClick(2)}>
+               {clicks.includes(2) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
+            </button>
           </div>
 
         </div>
@@ -48,7 +62,9 @@ export default function Frame() {
 
           <div className="preco-favorito">
             <h4 id="text">R$ 10,60</h4>
-            <GrFavorite className="favorito" size={30} />
+            <button className="botaofavorito" onClick={() => handleIconClick(3)}>
+               {clicks.includes(3) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
+            </button>
           </div>
 
         </div>
