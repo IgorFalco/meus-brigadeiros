@@ -13,7 +13,7 @@ function Login() {
     
        /* if(email ==="jonasneto@cpejr.com.br" && password === "senha"){*/
             history.push("home"); 
-    alert("Bem vindo\n" + email); 
+            alert("Bem vindo\n" + email); 
      
   /*  }
 
@@ -21,7 +21,8 @@ function Login() {
         history.push("login");
         alert("Dados incorretos");*/
         
-}
+    }
+
     return (
         <div className="página">
             <div className="EsquerdaPagina">
@@ -58,9 +59,11 @@ function Login() {
                 <div className="naoPossuiConta">
                     <h1>Não possui uma conta?</h1>
                     
-                     <Link to="cadastro"> <button>
-                        Inscreva-se agora
-                        </button></Link>
+                    <Link to="cadastro"> 
+                        <button>
+                          Inscreva-se agora
+                        </button>
+                    </Link>
                    
                 </div>
             </div>

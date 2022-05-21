@@ -25,7 +25,6 @@ function docinhos(){
 
 function Carousel2() {
   return (
-    
       
       <div className="App">
         <Carousel breakPoints={breakPoints}>
@@ -171,9 +170,8 @@ function Carousel2() {
             <img onClick={docinhos} src="/Dados/Imagens/Imagem 1.jpg"
 ></img></Item>
             </Carousel>
-      </div>
-
-  );
+    </div>
+  )
 }
 
 const rootElement = document.getElementById("root");
