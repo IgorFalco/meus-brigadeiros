@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css"
 
+
 function Login() {
+    const[email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const history = useHistory();
+   
+     function login(){
+    
+       /* if(email ==="jonasneto@cpejr.com.br" && password === "senha"){*/
+            history.push("home"); 
+    alert("Bem vindo\n" + email); 
+     
+  /*  }
+
+        else
+        history.push("login");
+        alert("Dados incorretos");*/
+        
+}
     return (
         <div className="página">
             <div className="EsquerdaPagina">
@@ -11,18 +31,24 @@ function Login() {
                 <div className="inputLogin">
                     <div className="inputEmail">
                         <label for="email"> Email</label>
-                        <input type="email" id="email"></input>
+                        <input type="email" 
+                        id="email" 
+                        placeholder="Email" 
+                        onChange={(e)=>setEmail(e.target.value)}
+                        >
+                        </input>
                     </div>
                     <div className="inputPass">
                         <label for="pass"> Senha
-                            <input type="password" id="pass" />
+                            <input type="password" id="pass"placeholder="Senha" 
+                            onChange={(e)=>setPassword(e.target.value)} />
                         </label>
                         
                     </div>
 
                     
                 </div>
-                <input type="submit" value="Entrar" id="entrarLogin"/>
+                <input type="submit" value="Entrar" onClick={login} id="entrarLogin"/>
                 <div className="ou">
                     <hr id="barraEsquerda"></hr>
                     <h1>OU</h1>
@@ -31,7 +57,11 @@ function Login() {
 
                 <div className="naoPossuiConta">
                     <h1>Não possui uma conta?</h1>
-                    <button>Increva-se agora</button>
+                    
+                     <Link to="cadastro"> <button>
+                        Inscreva-se agora
+                        </button></Link>
+                   
                 </div>
             </div>
 
