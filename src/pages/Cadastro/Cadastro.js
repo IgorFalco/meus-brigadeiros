@@ -20,7 +20,7 @@ function Cadastro() {
                         </label>
                     </div>
                     <div className="campo">
-                        <label>CEP:
+                        <label>Endereço:
                             <input type="text" />
                         </label>
                     </div>
