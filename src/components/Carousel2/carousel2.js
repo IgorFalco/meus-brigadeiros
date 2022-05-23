@@ -36,144 +36,144 @@ function Carousel2() {
         <Carousel breakPoints={breakPoints}>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut valentine´s.jpg">
+            <img onClick={donuts} src="/Dados/Imagens/donut valentine´s.jpg" alt=" ">
             </img>  </Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut rainbow.jpg"
+            <img onClick={donuts} src="/Dados/Imagens/donut rainbow.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut magrelo.jpg"
+            <img onClick={donuts} src="/Dados/Imagens/donut magrelo.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo morango.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo morango.jpg" alt=" "
             ></img> </Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/Bolo tiramisu.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/Bolo tiramisu.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo com cereja.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo com cereja.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/alfajor.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/alfajor.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 4.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 4.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 5.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 5.jpg" alt=" "
             ></img></Item>
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut fruta.jpg">
+            <img onClick={donuts} src="/Dados/Imagens/donut fruta.jpg" alt=" ">
             </img>  </Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut misto.jpg"
+            <img onClick={donuts} src="/Dados/Imagens/donut misto.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut urso.jpg"
+            <img onClick={donuts} src="/Dados/Imagens/donut urso.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo com bolas.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo com bolas.jpg" alt=" "
             ></img> </Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo red velvet.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo red velvet.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo unicornio.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo unicornio.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 6.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 6.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 3.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 3.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 1.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 1.jpg" alt=" "
             ></img></Item>
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut valentine´s.jpg">
+            <img onClick={donuts} src="/Dados/Imagens/donut valentine´s.jpg" alt=" ">
             </img>  </Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut rainbow.jpg"
+            <img onClick={donuts} src="/Dados/Imagens/donut rainbow.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut magrelo.jpg"
+            <img onClick={donuts} src="/Dados/Imagens/donut magrelo.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo morango.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo morango.jpg" alt=" "
             ></img> </Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/Bolo tiramisu.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/Bolo tiramisu.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo com cereja.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo com cereja.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/alfajor.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/alfajor.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 4.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 4.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 5.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 5.jpg" alt=" "
             ></img></Item>
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut fruta.jpg">
+            <img onClick={donuts} src="/Dados/Imagens/donut fruta.jpg" alt=" ">
             </img>  </Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut misto.jpg"
+            <img onClick={donuts} src="/Dados/Imagens/donut misto.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut urso.jpg"
+            <img onClick={donuts} src="/Dados/Imagens/donut urso.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo com bolas.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo com bolas.jpg" alt=" "
             ></img> </Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo red velvet.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo red velvet.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo unicornio.jpg"
+            <img onClick={bolos} src="/Dados/Imagens/bolo unicornio.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 6.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 6.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 3.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 3.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 1.jpg"
+            <img onClick={docinhos} src="/Dados/Imagens/Imagem 1.jpg" alt=" "
             ></img></Item>
         </Carousel>
       </div>

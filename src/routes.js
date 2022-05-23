@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Cadastro from "./pages/Cadastro";
 import Home from "./pages/Home";
@@ -7,30 +7,44 @@ import Produtos from "./pages/Produtos";
 import Perfil from "./pages/Perfil";
 import Header from "./components/Header";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import { isAuthenticated } from "./services/auth";
+
+
+const PrivateRoute = ({ component: Component, ...rest }) => {
+    return (
+
+        <Route {...rest} render={(props) =>
+            isAuthenticated() ? (
+                <Component {...props} />
+            ) : (
+                <Redirect to={{ pathname: "/login", state: { from: props.location } }} />
+            )
+        } />
+    );
+};
+
+
 function Routes() {
     return (
         <BrowserRouter>
-            <Switch>
-                <Route path="/" component={UserMenu} />
-            </Switch>
+            <Header>
+                <Switch>
+                    <Route exact path="/login" component={Login} />
+                    <Route exact path="/cadastro" component={Cadastro} />
+                    <Route exact path="/produtos" component={Produtos} />
+                    <Route exact path="/home" component={Home} />
+                    <Route path="/" component={UserMenu} />
+                </Switch>
+            </Header>
         </BrowserRouter>
     );
 
     function UserMenu() {
         return (
-            <Header>
                 <Switch>
-                    <Route exact path="/home" component={Home} />
-                    <Route exact path="/login" component={Login} />
-                    <Route exact path="/cadastro" component={Cadastro} />
-                    <Route exact path="/perfil" component={Perfil} />
-                    <Route exact path="/produtos" component={Produtos} />
-                    <Route exact path="/donuts" component={Produtos} />
-                    <Route exact path="/doces" component={Produtos} />
-                    <Route exact path="/bolos" component={Produtos} />
-                    <Route component={() => <Redirect to="home" />} />
+                    <PrivateRoute exact path="/perfil" component={Perfil} />
+                    <Route component={() => <Redirect to="/login" />} />
                 </Switch>
-            </Header>
         )
     }
 }
