@@ -1,17 +1,32 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom"; 
+import api from "../../services/api"
 import "./Cadastro.css";
 
 function Cadastro() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [nome, setNome] = useState();
-    const [cep, setCep] = useState();
-    const [description, setDescription] = useState();
+    const [número, setNúmero] = useState();
+    const [descrição, setDescrição] = useState();
     const [confirmar, setConfirmar] = useState();
+    const history = useHistory();
 
-    function cadastrar() {
+    async function cadastrar(e) {
+        e.preventDefault();
         if (password === confirmar) {
-            alert("batata")
+      
+            try {
+                const response = await api.post('/cadastro', { nome, email, número, descrição, password});
+                alert("Bem Vindo");
+                history.push("home");
+
+            } catch (error) {
+                console.warn(error);
+                alert(error.message);
+            }
+        } else {
+            alert("Senhas incompatívies");
         }
     };
 
@@ -35,14 +50,14 @@ function Cadastro() {
                     </div>
                     <div className="campo">
                         <label>Endereço:
-                            <input type="text" />
+                            <input type="text" placeholder="Rua/Logradouro" onChange={(e) => setNúmero(e.target.value)}/>
                         </label>
                     </div>
 
                     <div className="campop">
                         <label for="palavras">Se descreva com palavras mais doces... :</label>
 
-                        <input type="text" id="palavras" className="palavras" onChange={(e) => setDescription(e.target.value)} />
+                        <input type="text" id="palavras" className="palavras" onChange={(e) => setDescrição(e.target.value)} />
                     </div>
 
 
