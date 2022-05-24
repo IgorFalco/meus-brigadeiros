@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Produtos from "./pages/Produtos";
 import Perfil from "./pages/Perfil";
+import Recadastro from "./pages/Recadastro";
 import Header from "./components/Header";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import { isAuthenticated } from "./services/auth";
@@ -30,6 +31,7 @@ function Routes() {
             <Header>
                 <Switch>
                     <Route exact path="/login" component={Login} />
+                    <Route exact path="/recadastro" component={Recadastro} />
                     <Route exact path="/cadastro" component={Cadastro} />
                     <Route exact path="/produtos" component={Produtos} />
                     <Route exact path="/home" component={Home} />

@@ -1,6 +1,10 @@
 import React from "react";
 import "./Perfil.css"
+import { Link } from "react-router-dom";
 
+function editar(){
+    window.location.href="/recadastro"
+}
 function Perfil() {
     return (
         <div className="paginaCadastro">
@@ -10,7 +14,7 @@ function Perfil() {
                     <p>, seja Bem Vindo (a) </p>
                 </div>
                 <img src="/images/PerfilRosto.jpg" alt="foto de perfil" id="perfil"></img>
-                <input id="editarperfil" type="submit" value="Editar Perfil" />
+                <input id="editarperfil" type="submit" value="Editar Perfil" onClick={editar}/>
                 <div className="dados">
                     <div className="linhaPerfil">
 

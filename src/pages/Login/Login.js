@@ -5,7 +5,10 @@ import api from "../../services/api"
 import { login } from "../../services/auth";
 import "./Login.css"
 
+function cadastrar() {
 
+    window.location.href="/cadastro"
+}
 function Login() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -17,7 +20,7 @@ function Login() {
             const response = await api.post('/login', { email, password })
             alert("Bem vindo" + response.data.user.name);
             login(response.data.acessToken);
-            history.push("/home");
+            window.location.href="/home"
             console.log(response);
 
         } catch (error) {
@@ -66,11 +69,12 @@ function Login() {
                 <div className="naoPossuiConta">
                     <h1>Não possui uma conta?</h1>
 
-                    <Link to="cadastro">
-                        <button>
+                    
+                        <button onClick={cadastrar}>
                             Inscreva-se agora
+                            
                         </button>
-                    </Link>
+                   
 
                 </div>
             </div>

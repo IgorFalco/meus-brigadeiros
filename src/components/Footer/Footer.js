@@ -1,7 +1,9 @@
 import React from "react";
 import "./Footer.css";
 
-
+function cadastrar(){
+    window.location.href="/cadastro"
+}
 function Footer() {
     return (
         <div className="footer">
@@ -13,7 +15,7 @@ function Footer() {
                             placeholder="Seu melhor email"
                             type="email">
                         </input>
-                        <button className="botao-cadastro" onClick={""}>CADASTRAR</button>
+                        <button className="botao-cadastro" onClick={cadastrar}>CADASTRAR</button>
                     </div>
                 </div>
             </div>
