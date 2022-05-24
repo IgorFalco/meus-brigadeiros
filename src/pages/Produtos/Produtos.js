@@ -3,6 +3,43 @@ import "./products.css";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite'
 
+const Redvelvet = {
+    imagem: <img src="/images/bolo-red-velvet.jpg" alt="redvelvet" className="imagem" />,
+    texto: "Bolo Red Velvet",
+    preco: "R$ 35,00",
+}; 
+ 
+
+function Frame(imagem, texto, preco) {
+    const [clicks, setClicks] = useState([]);
+    
+    const handleIconClick = (id) => {
+        let result =  clicks.includes(id)? clicks.filter(click => click !== id): [...clicks, id]
+        setClicks(result)
+    }
+
+    return(
+    
+        <div>
+            <div className="componente">
+                    <img src= {imagem} alt="redvelvet" className="imagem" />
+                    <h4 id="texto">{texto}</h4>
+        
+                    <div className="preco_favorito">
+                        <h4 id="texto">{preco}</h4>
+                        <button className="botaofavorito" onClick={() => handleIconClick(0)}>
+                            
+                            {clicks.includes(0) ? < FavoriteIcon style={{ color: 'red', fontSize: 32}}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32}}/>}
+                        </button>
+                    </div>
+                </div>
+        </div>
+    );
+    
+}
+
+
+
 function Produtos() {
     const [clicks, setClicks] = useState([]);
     
@@ -18,22 +55,13 @@ function Produtos() {
                 <h1 id="titulo">BOLOS</h1>
                 <div className="linha"/>
             </div>
+
+            <Frame frame = {Redvelvet}/>
             
     
             <div className="fileira" style={{marginTop:150}}>
-                <div className="componente">
-                    <img src="/images/bolo-red-velvet.jpg" alt="redvelvet" className="imagem" />
-                    <h4 id="texto">Bolo Red Velvet</h4>
-        
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(0)}>
-                            
-                            {clicks.includes(0) ? < FavoriteIcon style={{ color: 'red', fontSize: 32}}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32}}/>}
-                        </button>
-                    </div>
-                </div>
-    
+              
+
                 <div className="componente">
                     <img src="/images/bolo-unicornio.jpg" alt="unicornio" className="imagem" />
                     <h4 id="texto">Bolo Unicórnio </h4>
