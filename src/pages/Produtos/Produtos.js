@@ -1,52 +1,65 @@
 import React, {useState} from "react";
 import "./products.css";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import FavoriteIcon from '@mui/icons-material/Favorite'
+import Componente from "../../components/Componente/Componete";
 
 const Redvelvet = {
-    imagem: <img src="/images/bolo-red-velvet.jpg" alt="redvelvet" className="imagem" />,
+    produtoid: "654821566",
+    imagem: "/images/bolo-red-velvet.jpg",
     texto: "Bolo Red Velvet",
     preco: "R$ 35,00",
 }; 
- 
 
-function Frame(imagem, texto, preco) {
-    const [clicks, setClicks] = useState([]);
-    
-    const handleIconClick = (id) => {
-        let result =  clicks.includes(id)? clicks.filter(click => click !== id): [...clicks, id]
-        setClicks(result)
-    }
+const Unicornio = {
+    imagem: "/images/bolo-unicornio.jpg",
+    texto: "Bolo Unicórnio",
+    preco: "R$ 35,00",
+};
 
-    return(
-    
-        <div>
-            <div className="componente">
-                    <img src= {imagem} alt="redvelvet" className="imagem" />
-                    <h4 id="texto">{texto}</h4>
-        
-                    <div className="preco_favorito">
-                        <h4 id="texto">{preco}</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(0)}>
-                            
-                            {clicks.includes(0) ? < FavoriteIcon style={{ color: 'red', fontSize: 32}}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32}}/>}
-                        </button>
-                    </div>
-                </div>
-        </div>
-    );
-    
-}
+const Flores = {
+    imagem: "/images/bolo-flores.jpg",
+    texto: "Bolo Flores",
+    preco: "R$ 35,00",
+};
+
+const Misto = {
+    imagem: "/images/bolo-misto.jpg",
+    texto: "Bolo Misto",
+    preco: "R$ 35,00"
+};
+
+const Suspiro = {
+    imagem: "/images/bolo-suspiro.jpg",
+    texto: "Bolo Suspiro",
+    preco: "R$ 35,00"
+};
+
+const Canela = {
+    imagem: "/images/bolo-canela.jpg",
+    texto: "Bolo Canela",
+    preco: "R$ 35,00"
+};
+
+const Morango = {
+    imagem: "/images/bolo-morango.jpg",
+    texto: "Bolo Morango",
+    preco: "R$ 35,00"
+};
+
+const Bolas = {
+    imagem: "/images/bolo-bolas.jpg",
+    texto: "Bolo Bolas",
+    preco: "R$ 35,00"
+};
+
+const Tiramisu = {
+    imagem: "/images/bolo-tiramisu.jpg",
+    texto: "Bolo Tiramisu",
+    preco: "R$ 35,00"
+};
 
 
 
 function Produtos() {
-    const [clicks, setClicks] = useState([]);
-    
-    const handleIconClick = (id) => {
-        let result =  clicks.includes(id)? clicks.filter(click => click !== id): [...clicks, id]
-        setClicks(result)
-   }
 
     return(
         <div className="bolos">
@@ -55,125 +68,35 @@ function Produtos() {
                 <h1 id="titulo">BOLOS</h1>
                 <div className="linha"/>
             </div>
-
-            <Frame frame = {Redvelvet}/>
             
     
             <div className="fileira" style={{marginTop:150}}>
               
-
-                <div className="componente">
-                    <img src="/images/bolo-unicornio.jpg" alt="unicornio" className="imagem" />
-                    <h4 id="texto">Bolo Unicórnio </h4>
-        
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(1)}>
-                            
-                            {clicks.includes(1) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-                        </button>
-                    </div>
-                </div>
+                <Componente componente = {Redvelvet}/>
+                
+                <Componente componente = {Unicornio}/>
     
-                <div className="componente">
-                    <img src="/images/bolo-flores.jpg" alt="flores" className="imagem" />
-                    <h4 id="texto">Bolo Flores</h4>
-
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(2)}>
-                            
-                            {clicks.includes(2) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-                        </button>
-                    </div>  
-    
-                </div>
+                <Componente componente = {Flores}/>
     
             </div>
 
             <div className="fileira">
-                <div className="componente">
-                    <img src="/images/bolo-misto.jpg" alt="misto" className="image" />
-                    <h4 id="texto">Bolo Misto</h4>
-        
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(3)}>
-                            
-                            {clicks.includes(3) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-                        </button>
-                    </div>
-                </div>
+                
+                <Componente componente = {Misto}/>
     
-                <div className="componente">
-                    <img src="/images/bolo-suspiro.jpg" alt="suspiro" className="image" />
-                    <h4 id="texto">Bolo Suspiro</h4>
-        
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(4)}>
-                            
-                            {clicks.includes(4) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-                        </button>
-                    </div>
-                </div>
+                <Componente componente = {Suspiro}/>
     
-                <div className="componente">
-                    <img src="/images/bolo-canela.jpg" alt="canela" className="image" />
-                    <h4 id="texto">Bolo Canela</h4>
-
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(5)}>
-                            
-                            {clicks.includes(5) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-                        </button>
-                    </div>  
-    
-                </div>
+                <Componente componente = {Canela}/>
     
             </div>
 
             <div className="fileira" style={{marginBottom:50}}>
-                <div className="componente">
-                    <img src="/images/bolo-morango.jpg" alt="morango" className="image" />
-                    <h4 id="texto">BOlo Morango</h4>
-        
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(6)}>
-                            
-                            {clicks.includes(6) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-                        </button>
-                    </div>
-                </div>
+                
+                <Componente componente = {Morango}/>
     
-                <div className="componente">
-                    <img src="/images/bolo-bolas.jpg" alt="bolas" className="image" />
-                    <h4 id="texto">Bolo Bolas</h4>
-        
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(7)}>
-                            
-                            {clicks.includes(7) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-                        </button>
-                    </div>
-                </div>
+                <Componente componente = {Bolas}/>
     
-                <div className="componente">
-                    <img src="/images/bolo-tiramisu.jpg" alt="tiramisu" className="image" />
-                    <h4 id="texto">Bolo Tiramisu</h4>
-
-                    <div className="preco_favorito">
-                        <h4 id="texto">R$ 35,00</h4>
-                        <button className="botaofavorito" onClick={() => handleIconClick(8)}>
-                            
-                            {clicks.includes(8) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-                        </button>
-                    </div>  
-    
-                </div>
+                <Componente componente = {Tiramisu}/>
     
             </div>
     
