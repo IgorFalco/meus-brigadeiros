@@ -51,47 +51,47 @@ function Cadastro() {
     }   
 
     return (
-        <div className="pagina">
-            <div className="itens">
-                <div className="Titulo">
+        <div className="pagina1">
+            <div className="itens1">
+                <div className="Titulo1">
                     <h1>Cadastre-se</h1>
                 </div>
-                <div className="retangulo">
-                    <div className="campo">
+                <div className="retangulo1">
+                    <div className="campo1">
                         <label>Nome:
                             <input type="text" placeholder="   Seu Nome" onChange={(e) => setNome(e.target.value)} />
                         </label>
                     </div>
 
-                    <div className="campo">
+                    <div className="campo1">
                         <label for="email">E-mail:
                             <input type="text" id="email" placeholder="   *****@******.com.br" onChange={(e) => setEmail(e.target.value)} />
                         </label>
                     </div>
-                    <div className="campo">
+                    <div className="campo1">
                         <label>Endereço:
                             <input type="text" placeholder="   Rua/Logradouro" onChange={(e) => setEndereço(e.target.value)}/>
                         </label>
                     </div>
 
-                    <div className="campop">
+                    <div className="campop1">
                         <label for="palavras">Descrição:</label>
                         <input type="text" id="palavras" placeholder="   Use as palavras mais doces..." className="palavras" onChange={(e) => setDescrição(e.target.value)} />
                     </div>
 
 
-                    <div className="campo">
+                    <div className="campo1">
                         <label>Senha:
                             <input type="password" id= "senha" placeholder="   *****" onChange={(e) => setPassword(e.target.value)} onKeyUp={erros} />
                         </label>
                         <span id="parametros" className="parametros"></span>
                     </div>
-                    <div className="campo">
+                    <div className="campo1">
                         <label>Confirmar a senha:
                             <input type="password" placeholder="   *****" onChange={(e) => setConfirmar(e.target.value)} />
                         </label>
                     </div>
-                    <div className="botao">
+                    <div className="botao1">
                         <button className="inscreva-se" onClick={cadastrar}> Inscreva-se agora</button>
                     </div>
                 </div>
