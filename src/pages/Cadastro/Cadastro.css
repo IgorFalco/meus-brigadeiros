@@ -101,6 +101,13 @@ label {
     line-height: 34px;
 }
 
+.parametros {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
 @media (max-width:1200px) {
     .itens {
         display: flex;
@@ -214,4 +221,10 @@ label {
         line-height: 27px;
     }
 
+    .parametros {
+        display: block;
+        color: red;
+        font-size: 0.7em;
+        font-weight: 600;
+    }
 }
