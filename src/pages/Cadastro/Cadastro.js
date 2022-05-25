@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom"; 
 import api from "../../services/api"
+import { Link } from "react-router-dom";
 import "./Cadastro.css";
 
 function Cadastro() {
@@ -19,7 +20,7 @@ function Cadastro() {
             try {
                 await api.post('/cadastro', { nome, email, endereço ,descrição, password});
                 alert("Bem Vindo");
-                history.push("home");
+                window.location.href="/home";
 
             } catch (error) {
                 console.warn(error);
@@ -39,13 +40,13 @@ function Cadastro() {
                 <div className="retangulo">
                     <div className="campo">
                         <label>Nome:
-                            <input type="text" placeholder="Seu Nome" onChange={(e) => setNome(e.target.value)} />
+                            <input type="text" placeholder="    Seu Nome" onChange={(e) => setNome(e.target.value)} />
                         </label>
                     </div>
 
                     <div className="campo">
                         <label for="email">E-mail:
-                            <input type="text" id="email" placeholder="*****@******.com.br" onChange={(e) => setEmail(e.target.value)} />
+                            <input type="text" id="email" placeholder="    *****@******.com.br" onChange={(e) => setEmail(e.target.value)} />
                         </label>
                     </div>
                     <div className="campo">
@@ -63,12 +64,12 @@ function Cadastro() {
 
                     <div className="campo">
                         <label>Senha:
-                            <input type="password" placeholder="*****" onChange={(e) => setPassword(e.target.value)} />
+                            <input type="password" placeholder="    *****" onChange={(e) => setPassword(e.target.value)} />
                         </label>
                     </div>
                     <div className="campo">
                         <label>Confirmar a senha:
-                            <input type="password" placeholder="*****" onChange={(e) => setConfirmar(e.target.value)} />
+                            <input type="password" placeholder="    *****" onChange={(e) => setConfirmar(e.target.value)} />
                         </label>
                     </div>
                     <div className="botao">

@@ -17,8 +17,8 @@ function Login() {
             const response = await api.post('/login', { email, password })
             alert("Bem vindo");
             login(response.data.acessToken);
-            history.push("/perfil");
-            console.log(response);
+            window.location.href="/home";
+
 
         } catch (error) {
             if (error.response.status === 403) {
@@ -28,6 +28,10 @@ function Login() {
             }
             console.warn(error);
         }
+    }
+
+    async function inscrever(e) {
+        window.location.href="/cadastro";
     }
 
     return (
@@ -66,11 +70,11 @@ function Login() {
                 <div className="naoPossuiConta">
                     <h1>Não possui uma conta?</h1>
 
-                    <Link to="cadastro">
-                        <button>
+                    <div>
+                        <button onClick={inscrever}>
                             Inscreva-se agora
                         </button>
-                    </Link>
+                    </div>
 
                 </div>
             </div>
