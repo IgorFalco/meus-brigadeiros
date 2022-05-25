@@ -31,8 +31,8 @@ function Footer() {
                     <div className="colunas">
                         <div className="coluna1">
                             <h2>Quem Somos</h2>
-                            <a href="quemsomos" className="link">História</a>
-                            <a href="quemsomos" className="link">Origem</a>
+                            <a href="home" className="link">História</a>
+                            <a href="home" className="link">Origem</a>
                         </div>
                         <div className="coluna2">
                             <h2>Nossos Produtos</h2>
