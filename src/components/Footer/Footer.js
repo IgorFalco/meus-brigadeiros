@@ -3,6 +3,9 @@ import "./Footer.css";
 
 
 function Footer() {
+    function cadastrar(){
+        window.location.href="/cadastro"
+    }
     return (
         <div className="footer">
             <div className="topo">
@@ -13,7 +16,7 @@ function Footer() {
                             placeholder="Seu melhor email"
                             type="email">
                         </input>
-                        <button className="botao-cadastro" onClick={""}>CADASTRAR</button>
+                        <button className="botao-cadastro" onClick={cadastrar}>CADASTRAR</button>
                     </div>
                 </div>
             </div>

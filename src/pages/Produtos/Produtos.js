@@ -5,6 +5,7 @@ import api from "../../services/api";
 
 function Produtos() {
     const [produtos, setProdutos] = useState([]);
+    const [ids, setIds] = useState([]);
 
     async function getProdutos() {
         try {
@@ -20,6 +21,16 @@ function Produtos() {
         getProdutos();
     }, [])
 
+    useEffect(() => {
+        api.get("/favoritos").then((response) => {
+            var output = [];
+            for (var i = 0; i < response?.data?.result?.length; ++i) {
+                output.push(response?.data?.result[i]['produto_id']);
+            }
+            setIds(output);
+        })
+    }, [])
+
     return (
         <div className="bolos">
 
@@ -33,7 +44,7 @@ function Produtos() {
                 {
                     produtos &&
                     produtos.map((produto) => (
-                        <Componente key={produto.produto_id} produto={produto} />
+                        <Componente key={produto.produto_id} produto={produto} ids={ids} />
                     ))}
 
             </div>
