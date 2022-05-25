@@ -8,6 +8,7 @@
 }
 
 
+
 .elementos {
     display: flex;
     justify-content: space-between;
@@ -36,6 +37,10 @@
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     white-space: nowrap;
+}
+
+.Cadastro{
+    
 }
 
 @media (max-width: 1200px) {
@@ -76,6 +81,7 @@
         text-decoration: none;
         font-family: 'Inter', sans-serif;
     }
+    
 }
 
 @media (max-width: 800px) {

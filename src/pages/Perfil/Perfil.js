@@ -2,8 +2,10 @@ import "./Perfil.css"
 import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 import { logout } from "../../services/auth";
-import { useHistory } from "react-router-dom";
 
+function editar(){
+    window.location.href="/recadastro"
+}
 function Perfil() {
 
     const [Usuario, SetUsuario] = useState([]);
@@ -23,15 +25,13 @@ function Perfil() {
         getUser();
     }, [])
 
-    const history = useHistory();
-
     function editar(){
         window.location.href="/recadastro"
     }
 
     async function singOut() {
         logout();
-        history.push("/home");
+        window.location.href="/home"
     }
 
     const primeiroNome = Usuario[0]?.nome.split(" ");
@@ -63,9 +63,9 @@ function Perfil() {
                 <input id="logout" type="submit" value="Logout" onClick={singOut} />
             </div>
             <div className="coluna-direita">
-                <div className="carroselteste">
+                {/* <div className="carroselteste">
 
-                </div>
+                </div> */}
                 <div className="textinhoTitulo">
                     <div className="labellabel">
                         <label id="descricao">Descrição</label>

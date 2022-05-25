@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Produtos/products.css";
+import "./Favoritos.css"
 import Componente from "../../components/Componente/Componete";
 import api from "../../services/api";
 
@@ -35,6 +36,24 @@ function Produtos() {
         })
     }, [])
 
+    if (favoritos?.length === 0) {
+        return (
+            <div className="bolos">
+
+                <div className="titulo_linha">
+                    <h1 id="titulo">Favoritos</h1>
+                    <div className="linha" />
+                </div>
+
+                <div className="fileira" style={{ marginTop: 150 }}>
+
+                    <h1 id="semFav">Adicione alguns favoritos para guardar os seus docinhos favoritos!!!</h1>
+
+                </div>
+
+            </div>
+        )
+    }
     return (
         <div className="bolos">
 

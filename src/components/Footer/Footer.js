@@ -1,16 +1,18 @@
 import React from "react";
 import "./Footer.css";
 
-
+function cadastrar(){
+    window.location.href="/cadastro"
+}
 function Footer() {
-    function cadastrar(){
-        window.location.href="/cadastro"
+    function cadastrar() {
+        window.location.href = "/cadastro"
     }
     return (
         <div className="footer">
             <div className="topo">
                 <div className="elementos-topo">
-                        <p>Receba as novidades em primeira mão. Cadastre-se</p>
+                    <p>Receba as novidades em primeira mão. Cadastre-se</p>
                     <div className="cadastro">
                         <input className="seu-email"
                             placeholder="Seu melhor email"
@@ -40,9 +42,9 @@ function Footer() {
                         </div>
                         <div className="coluna3">
                             <h2>Contato</h2>
-                            <a href="https://www.instagram.com/" className="link">meusgranulados@gmail.com</a>
-                            <a href="https://www.instagram.com/" className="link">(xx) xxxxx-xxxx</a>
-                            <a href="https://www.instagram.com/" className="link">@meusgranulados</a>
+                            <a href="home" className="link">meusgranulados@gmail.com</a>
+                            <a href="https://api.whatsapp.com/send?phone=5531995931173&text=Ol%C3%A1%2C%20como%20vai%3F%20Eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20CPE." className="link">(31) 99593-1173</a>
+                            <a href="https://www.instagram.com/cpe.jr" className="link">@meusgranulados</a>
                         </div>
                     </div>
                 </div>
@@ -56,13 +58,13 @@ function Footer() {
                         <h2 className="texto">© Meus Granulados 2022</h2>
                     </div>
                     <div className="redesSociais">
-                        <a href="https://www.instagram.com/" className="link">
+                        <a href="https://www.instagram.com/cpe.jr" className="link">
                             <img src="/images/Instagram.png" alt="instagram" />
                         </a>
-                        <a href="https://www.facebook.com/" className="link">
+                        <a href="https://www.facebook.com/cpejr/" className="link">
                             <img src="/images/Facebook.png" alt="facebook" />
                         </a>
-                        <a href="https://whatsapp.com/" className="link">
+                        <a href="https://api.whatsapp.com/send?phone=5531995931173&text=Ol%C3%A1%2C%20como%20vai%3F%20Eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20CPE." className="link">
                             <img src="/images/Whatsapp.png" alt="wpp" />
                         </a>
                     </div>

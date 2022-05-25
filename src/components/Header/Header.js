@@ -15,7 +15,6 @@ function Header(props) {
                     <div className="navegacao">
                         <a href="home" className="links">Home</a>
                         <a href="produtos" className="links">Produtos</a>
-                        <a href="login" className="links">Login</a>
                         <a href="cadastro" className="links">Cadastre-se</a>
                         <div className="vetores">
                             <a href="perfil" className="icones">

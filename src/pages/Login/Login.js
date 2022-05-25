@@ -3,7 +3,10 @@ import api from "../../services/api"
 import { login } from "../../services/auth";
 import "./Login.css"
 
+function cadastrar() {
 
+    window.location.href="/cadastro"
+}
 function Login() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -14,7 +17,8 @@ function Login() {
             const response = await api.post('/login', { email, password })
             alert("Bem vindo");
             login(response.data.acessToken);
-            window.location.href="/home";
+            window.location.href="/home"
+            console.log(response);
 
 
         } catch (error) {
@@ -70,6 +74,7 @@ function Login() {
                     <div>
                         <button onClick={inscrever}>
                             Inscreva-se agora
+                            
                         </button>
                     </div>
 

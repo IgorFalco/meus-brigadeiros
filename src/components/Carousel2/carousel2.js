@@ -11,17 +11,10 @@ const breakPoints = [
 
 ];
 
-function donuts() {
-  alert("Você será adocicado com nossos Donuts!!");
+function goToProdutos() {
+  window.location.href = "/produtos"
 }
 
-function bolos() {
-  alert("Você será aprazerado com nossos Bolos!!");
-}
-
-function docinhos() {
-  alert("Você verá nossos docinhos igual você!!");
-}
 
 function Carousel2() {
   return (
@@ -36,144 +29,145 @@ function Carousel2() {
         <Carousel breakPoints={breakPoints}>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut valentine´s.jpg" alt=" ">
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut valentine´s.jpg" alt=" ">
             </img>  </Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut rainbow.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut rainbow.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut magrelo.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut magrelo.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo morango.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo morango.jpg" alt=" "
             ></img> </Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/Bolo tiramisu.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Bolo tiramisu.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo com cereja.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo com cereja.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/alfajor.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/alfajor.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 4.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 4.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 5.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 5.jpg" alt=" "
             ></img></Item>
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut fruta.jpg" alt=" ">
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut fruta.jpg" alt=" ">
             </img>  </Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut misto.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut misto.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut urso.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut urso.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo com bolas.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo com bolas.jpg" alt=" "
             ></img> </Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo red velvet.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo red velvet.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo unicornio.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo unicornio.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 6.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 6.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 3.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 3.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 1.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 1.jpg" alt=" "
             ></img></Item>
+
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut valentine´s.jpg" alt=" ">
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut valentine´s.jpg" alt=" ">
             </img>  </Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut rainbow.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut rainbow.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut magrelo.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut magrelo.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo morango.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo morango.jpg" alt=" "
             ></img> </Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/Bolo tiramisu.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Bolo tiramisu.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo com cereja.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo com cereja.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/alfajor.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/alfajor.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 4.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 4.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 5.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 5.jpg" alt=" "
             ></img></Item>
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut fruta.jpg" alt=" ">
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut fruta.jpg" alt=" ">
             </img>  </Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut misto.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut misto.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={donuts} src="/Dados/Imagens/donut urso.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/donut urso.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo com bolas.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo com bolas.jpg" alt=" "
             ></img> </Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo red velvet.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo red velvet.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={bolos} src="/Dados/Imagens/bolo unicornio.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/bolo unicornio.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 6.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 6.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 3.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 3.jpg" alt=" "
             ></img></Item>
 
           <Item>
-            <img onClick={docinhos} src="/Dados/Imagens/Imagem 1.jpg" alt=" "
+            <img onClick={goToProdutos} src="/Dados/Imagens/Imagem 1.jpg" alt=" "
             ></img></Item>
         </Carousel>
       </div>

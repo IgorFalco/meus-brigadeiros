@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Produtos from "./pages/Produtos";
 import Perfil from "./pages/Perfil";
 import Favoritos from "./pages/Favoritos";
+import Recadastro from "./pages/Recadastro";
 import Header from "./components/Header";
 import Recadastro from "./pages/Recadastro";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";

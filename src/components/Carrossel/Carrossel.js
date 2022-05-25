@@ -22,7 +22,7 @@ function Carrossel() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/Imagem 8.jpg"
+              src="/images/Imagem-8.jpg"
               alt="Second slide" />
             <Carousel.Caption>
             </Carousel.Caption>

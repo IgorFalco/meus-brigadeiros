@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom"; 
 import api from "../../services/api"
 import "./Recadastro.css";
 
@@ -11,29 +10,22 @@ function Recadastro() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [nome, setNome] = useState();
-    const [número, setNúmero] = useState();
+    const [endereço, setEndereço] = useState();
     const [descrição, setDescrição] = useState();
-    const [confirmar, setConfirmar] = useState();
-    const history = useHistory();
 
     async function cadastrar(e) {
         e.preventDefault();
-        if (password === confirmar) {
-      
-            try {
-                const response = await api.post('/cadastro', { nome, email, número, descrição, password});
-                alert("Bem Vindo");
-                
 
-            } catch (error) {
-                console.warn(error);
-                alert(error.message);
-            }
-        } else {
-            alert("Senhas incompatívies");
-            window.location.href="/recadastro"
+        try {
+            await api.put('/usuarios', { nome, email, endereço, descrição, password });
+            alert("Bem Alterações concluídas!!");
+
+
+        } catch (error) {
+            console.warn(error);
+            alert(error.message);
         }
-        window.location.href="/home"
+        window.location.href = "/perfil"
     };
 
     return (
@@ -56,7 +48,7 @@ function Recadastro() {
                     </div>
                     <div className="campo">
                         <label>Endereço:
-                            <input type="text" placeholder="Rua/Logradouro" onChange={(e) => setNúmero(e.target.value)}/>
+                            <input type="text" placeholder="Rua/Logradouro" onChange={(e) => setEndereço(e.target.value)} />
                         </label>
                     </div>
 
@@ -66,17 +58,6 @@ function Recadastro() {
                         <input type="text" id="palavras" className="palavras" onChange={(e) => setDescrição(e.target.value)} />
                     </div>
 
-
-                    <div className="campo">
-                        <label>Senha:
-                            <input type="password" placeholder="*****" onChange={(e) => setPassword(e.target.value)} />
-                        </label>
-                    </div>
-                    <div className="campo">
-                        <label>Confirmar a senha:
-                            <input type="password" placeholder="*****" onChange={(e) => setConfirmar(e.target.value)} />
-                        </label>
-                    </div>
                     <div className="botao">
                         <button className="inscreva-se" onClick={cadastrar} > Confirme seus dados agora</button>
                     </div>
