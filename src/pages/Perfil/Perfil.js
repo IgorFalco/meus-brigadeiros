@@ -4,6 +4,9 @@ import api from "../../services/api";
 import { logout } from "../../services/auth";
 import { useHistory } from "react-router-dom";
 
+function editar(){
+    window.location.href="/recadastro"
+}
 function Perfil() {
 
     const [Usuario, SetUsuario] = useState([]);
@@ -42,7 +45,7 @@ function Perfil() {
                     <p>, seja Bem Vindo (a) </p>
                 </div>
                 <img src="/images/PerfilRosto.jpg" alt="foto de perfil" id="perfil"></img>
-                <input id="editarperfil" type="submit" value="Editar Perfil" />
+                <input id="editarperfil" type="submit" value="Editar Perfil" onClick={editar}/>
                 <div className="dados">
                     <div className="linhaPerfil">
 
