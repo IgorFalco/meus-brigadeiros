@@ -21,7 +21,7 @@ function Recadastro() {
         if (password === confirmar) {
       
             try {
-                const response = await api.post('/cadastro', { nome, email, número, descrição, password});
+                const response = await api.update('/cadastro', { nome, email, número, descrição, password});
                 alert("Bem Vindo");
                 
 

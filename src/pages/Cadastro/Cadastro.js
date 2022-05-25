@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom"; 
+import React, { useState } from "react"; 
 import api from "../../services/api"
-import { Link } from "react-router-dom";
 import "./Cadastro.css";
 
 function Cadastro() {
@@ -11,12 +9,11 @@ function Cadastro() {
     const [endereço, setEndereço] = useState();
     const [descrição, setDescrição] = useState();
     const [confirmar, setConfirmar] = useState();
-    const history = useHistory();
 
     async function cadastrar(e) {
         e.preventDefault();
-        if (password === confirmar) {
-      
+        if (password === confirmar)
+        {
             try {
                 await api.post('/cadastro', { nome, email, endereço ,descrição, password});
                 alert("Bem Vindo");
@@ -24,12 +21,34 @@ function Cadastro() {
 
             } catch (error) {
                 console.warn(error);
-                alert(error.message);
+                alert("Por favor, verifique se todos os campos estão preenchidos corretamente!");
             }
-        } else {
+
+        }else {
             alert("Senhas incompatívies");
         }
     };
+    
+    async function erros(e) {
+    
+        var Senha = document.getElementById("senha").value;
+        var regex = /^(?=(?:.*?[A-Z]){1})(?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&]*$/;
+        
+        if(Senha.length > 0)  {
+            if(Senha.length < 6 || !regex.exec(Senha))
+            {
+            document.getElementById("parametros").innerHTML = ("A senha deve conter, no mínimo, 6 caracteres <br>A senha deve conter uma letra maiúscula <br>A senha deve conter um caracter especial")
+            }
+            else{
+                document.getElementById("parametros").innerHTML = "";
+            }
+        }
+        else
+        {
+            document.getElementById("parametros").innerHTML = "";
+        }
+        
+    }   
 
     return (
         <div className="pagina">
@@ -40,36 +59,36 @@ function Cadastro() {
                 <div className="retangulo">
                     <div className="campo">
                         <label>Nome:
-                            <input type="text" placeholder="    Seu Nome" onChange={(e) => setNome(e.target.value)} />
+                            <input type="text" placeholder="   Seu Nome" onChange={(e) => setNome(e.target.value)} />
                         </label>
                     </div>
 
                     <div className="campo">
                         <label for="email">E-mail:
-                            <input type="text" id="email" placeholder="    *****@******.com.br" onChange={(e) => setEmail(e.target.value)} />
+                            <input type="text" id="email" placeholder="   *****@******.com.br" onChange={(e) => setEmail(e.target.value)} />
                         </label>
                     </div>
                     <div className="campo">
                         <label>Endereço:
-                            <input type="text" placeholder="Rua/Logradouro" onChange={(e) => setEndereço(e.target.value)}/>
+                            <input type="text" placeholder="   Rua/Logradouro" onChange={(e) => setEndereço(e.target.value)}/>
                         </label>
                     </div>
 
                     <div className="campop">
-                        <label for="palavras">Se descreva com palavras mais doces... :</label>
-
-                        <input type="text" id="palavras" className="palavras" onChange={(e) => setDescrição(e.target.value)} />
+                        <label for="palavras">Descrição:</label>
+                        <input type="text" id="palavras" placeholder="   Use as palavras mais doces..." className="palavras" onChange={(e) => setDescrição(e.target.value)} />
                     </div>
 
 
                     <div className="campo">
                         <label>Senha:
-                            <input type="password" placeholder="    *****" onChange={(e) => setPassword(e.target.value)} />
+                            <input type="password" id= "senha" placeholder="   *****" onChange={(e) => setPassword(e.target.value)} onKeyUp={erros} />
                         </label>
+                        <span id="parametros" className="parametros"></span>
                     </div>
                     <div className="campo">
                         <label>Confirmar a senha:
-                            <input type="password" placeholder="    *****" onChange={(e) => setConfirmar(e.target.value)} />
+                            <input type="password" placeholder="   *****" onChange={(e) => setConfirmar(e.target.value)} />
                         </label>
                     </div>
                     <div className="botao">
