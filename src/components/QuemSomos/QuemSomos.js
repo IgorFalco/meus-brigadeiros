@@ -11,15 +11,7 @@ function QuemSomos() {
             </div>
             <div className="paragrafo">
                 <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-                    qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
-                    quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                    soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                    placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                    Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
-                    doloribus asperiores repellat.
+                Somos a empresa Meus Brigadeiros, criada em 2021 e localiza-se em Belo Horizonte tem o objetivo de levar alegria e adocicar a vida das pessoas. Focada na satisfação do cliente, nossa empresa possui uma vasta variedade de produtos que vão de doces a bolos gourmet, todos feitos por profissionais qualificados e competentes. Além disso, nossos ingredientes são 100% orgânicos e de agricultura familiar, para alcançar o produto da melhor qualidade possível e ainda ajudar a comunidade a crescer como um todo. Venha fazer parte dessa história e garanta já um de nossos saborosos produtos!
                 </p>
             </div>
 
