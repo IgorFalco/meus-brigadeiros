@@ -28,6 +28,10 @@ function Perfil() {
 
     const history = useHistory();
 
+    function editar(){
+        window.location.href="/recadastro"
+    }
+
     async function singOut() {
         logout();
         history.push("/home");
@@ -44,8 +48,8 @@ function Perfil() {
                     }
                     <p>, seja Bem Vindo (a) </p>
                 </div>
-                <img src="/images/PerfilRosto.jpg" alt="foto de perfil" id="perfil"></img>
-                <input id="editarperfil" type="submit" value="Editar Perfil" onClick={editar}/>
+                <img src="/images/PerfilRosto.png" alt="foto de perfil" id="perfil"></img>
+                <input id="editarperfil" type="submit" value="Editar Perfil" onClick={editar} />
                 <div className="dados">
                     <div className="linhaPerfil">
 

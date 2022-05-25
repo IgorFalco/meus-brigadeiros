@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
 import api from "../../services/api"
 import { login } from "../../services/auth";
 import "./Login.css"
@@ -12,7 +10,6 @@ function cadastrar() {
 function Login() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    const history = useHistory();
 
     async function handleLogin(e) {
 

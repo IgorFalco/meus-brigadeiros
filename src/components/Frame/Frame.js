@@ -1,73 +1,74 @@
-import React, {useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./frame.css"
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import FavoriteIcon from '@mui/icons-material/Favorite'
+import Componente from "../Componente/Componete";
+import api from "../../services/api";
+
 
 
 export default function Frame() {
-  const [clicks, setClicks] = useState([]);
-    
-    const handleIconClick = (id) => {
-        let result =  clicks.includes(id)? clicks.filter(click => click !== id): [...clicks, id]
-        setClicks(result)
-   }
-  
+
+  const [ids, setIds] = useState([]);
+  const Brigadeiro_Confeitado = {
+    produto_id: "Brigadeiro_Confeitado",
+    título: "Brigadeiro Confeitado (200g)",
+    preço: "R$ 14,90",
+    caminho_imagem: "/images/brigadeiro-rainbow.jpg"
+  }
+  const Brigadeiro = {
+    produto_id: "Brigadeiro",
+    título: "Brigadeiro Tradicional (200g)",
+    preço: "R$ 10,60",
+    caminho_imagem: "/images/brigadeiro-tradicional.jpg"
+  }
+  const Donut_Sensação = {
+    produto_id: "Donut_Sensação",
+    título: "Donut Sensação (Unid)",
+    preço: "R$ 5,00",
+    caminho_imagem: "/images/donut-sensação.jpg"
+  }
+  const Beijinho = {
+    produto_id: "Beijinho",
+    título: "Beijinho (200g)",
+    preço: "R$ 10,60",
+    caminho_imagem: "/images/beijinho.jpg"
+  }
+
+  useEffect(() => {
+    api.get("/favoritos").then((response) => {
+      var output = [];
+      for (var i = 0; i < response?.data?.result?.length; ++i) {
+        output.push(response?.data?.result[i]['Brigadeiro_Confeitado']);
+        output.push(response?.data?.result[i]['Brigadeiro']);
+        output.push(response?.data?.result[i]['Donut_Sensação']);
+        output.push(response?.data?.result[i]['Donut_Sensação']);
+      }
+      setIds(output);
+    })
+  }, [])
+
   return (
     <div className="frame">
       <div className="maisquerido">
         <h1>Mais queridos</h1>
       </div>
       <div className="produtos">
-        <div className="component">
-          <img src="/images/brigadeiro-rainbow.jpg" alt="brigadeiro" className="image" />
-          <h4 id="text">Brigadeiro Confeitado (200g)</h4>
-
-          <div className="preco-favorito">
-            <h4 id="text">R$ 14,90</h4>
-            <button className="botaofavorito" onClick={() => handleIconClick(0)}>
-                {clicks.includes(0) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32}}/>}
-            </button>
-          </div>
-        </div>
-
-        <div className="component">
-          <img src="/images/donut-sensação.jpg" alt="brigadeiro" className="image" />
-          <h4 id="text">Donut Sensação (Unid)</h4>
-
-          <div className="preco-favorito">
-            <h4 id="text">R$ 5,00</h4>
-            <button className="botaofavorito" onClick={() => handleIconClick(1)}>
-               {clicks.includes(1) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-            </button>
-          </div>
-
-        </div>
-
-        <div className="component">
-          <img src="/images/brigadeiro-tradicional.jpg" alt="brigadeiro" className="image" />
-          <h4 id="text">Brigadeiro tradicional (200g)</h4>
-
-          <div className="preco-favorito">
-            <h4 id="text">R$ 10,60</h4>
-            <button className="botaofavorito" onClick={() => handleIconClick(2)}>
-               {clicks.includes(2) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-            </button>
-          </div>
-
-        </div>
-
-        <div className="component">
-          <img src="/images/beijinho.jpg" alt="brigadeiro" className="image" />
-          <h4 id="text">Beijinho (200g)</h4>
-
-          <div className="preco-favorito">
-            <h4 id="text">R$ 10,60</h4>
-            <button className="botaofavorito" onClick={() => handleIconClick(3)}>
-               {clicks.includes(3) ? < FavoriteIcon style={{ color: 'red', fontSize: 32 }}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32 }}/>}
-            </button>
-          </div>
-
-        </div>
+        {
+          ids &&
+          <Componente produto={Brigadeiro_Confeitado} ids={ids} />
+        }
+         {
+          ids &&
+          <Componente produto={Donut_Sensação} ids={ids} />
+        }
+        {
+          ids &&
+          <Componente produto={Brigadeiro} ids={ids} />
+        }
+        {
+          ids &&
+          <Componente produto={Beijinho} ids={ids} />
+        }
+      
 
       </div>
 

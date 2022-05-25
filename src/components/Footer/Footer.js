@@ -5,6 +5,9 @@ function cadastrar(){
     window.location.href="/cadastro"
 }
 function Footer() {
+    function cadastrar(){
+        window.location.href="/cadastro"
+    }
     return (
         <div className="footer">
             <div className="topo">

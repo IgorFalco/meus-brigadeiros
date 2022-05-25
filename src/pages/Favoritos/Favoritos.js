@@ -3,14 +3,14 @@ import "../Produtos/products.css";
 import Componente from "../../components/Componente/Componete";
 import api from "../../services/api";
 
+function Produtos() {
+    const [favoritos, setProdutos] = useState([]);
+    const [ids, setIds] = useState([]);
 
-function Favoritos() {
-    const [favoritos, setFavoritos] = useState([]);
-
-    async function getFavoritos() {
+    async function getProdutos() {
         try {
             const response = await api.get("/favoritos");
-            setFavoritos([...response.data.result]);
+            setProdutos([...response.data.result]);
         } catch (error) {
             console.warn(error);
             alert("Deu ruim")
@@ -18,7 +18,21 @@ function Favoritos() {
     }
 
     useEffect(() => {
-        getFavoritos();
+        getProdutos();
+    }, [])
+
+    useEffect(() => {
+        getProdutos();
+    }, [favoritos])
+
+    useEffect(() => {
+        api.get("/favoritos").then((response) => {
+            var output = [];
+            for (var i = 0; i < response?.data?.result?.length; ++i) {
+                output.push(response?.data?.result[i]['produto_id']);
+            }
+            setIds(output);
+        })
     }, [])
 
     return (
@@ -33,8 +47,8 @@ function Favoritos() {
 
                 {
                     favoritos &&
-                    favoritos.map((favorito) => (
-                        <Componente key={favorito.produto_id} favorito={favorito} />
+                    favoritos.map((produto) => (
+                        <Componente key={produto.produto_id} produto={produto} ids={ids} />
                     ))}
 
             </div>
@@ -43,4 +57,4 @@ function Favoritos() {
     );
 }
 
-export default Favoritos;
+export default Produtos;
