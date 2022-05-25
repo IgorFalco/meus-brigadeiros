@@ -7,7 +7,7 @@ function Cadastro() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [nome, setNome] = useState();
-    const [número, setNúmero] = useState();
+    const [endereço, setEndereço] = useState();
     const [descrição, setDescrição] = useState();
     const [confirmar, setConfirmar] = useState();
     const history = useHistory();
@@ -17,7 +17,7 @@ function Cadastro() {
         if (password === confirmar) {
       
             try {
-                const response = await api.post('/cadastro', { nome, email, número, descrição, password});
+                await api.post('/cadastro', { nome, email, endereço ,descrição, password});
                 alert("Bem Vindo");
                 history.push("home");
 
@@ -50,7 +50,7 @@ function Cadastro() {
                     </div>
                     <div className="campo">
                         <label>Endereço:
-                            <input type="text" placeholder="Rua/Logradouro" onChange={(e) => setNúmero(e.target.value)}/>
+                            <input type="text" placeholder="Rua/Logradouro" onChange={(e) => setEndereço(e.target.value)}/>
                         </label>
                     </div>
 

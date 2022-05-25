@@ -15,9 +15,9 @@ function Login() {
 
         try {
             const response = await api.post('/login', { email, password })
-            alert("Bem vindo" + response.data.user.name);
+            alert("Bem vindo");
             login(response.data.acessToken);
-            history.push("/home");
+            history.push("/perfil");
             console.log(response);
 
         } catch (error) {

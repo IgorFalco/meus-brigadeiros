@@ -21,7 +21,7 @@ function Header(props) {
                             <a href="perfil" className="icones">
                                 <img src="/images/Perfil.png" alt="logo" />
                             </a>
-                            <a href="perfil" className="icones">
+                            <a href="favoritos" className="icones">
                                 <img src="/images/Favoritos.png" alt="logo" />
                             </a>
                             <a href="perfil" className="icones">

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-function Componente(props) {
+function Componente({produto}) {
     const [clicks, setClicks] = useState([]);
     
     const handleIconClick = (id) => {
@@ -14,11 +14,11 @@ function Componente(props) {
     
         <div>
             <div className="componente">
-                    <img src= {props.componente.imagem} alt="redvelvet" className="imagem" />
-                    <h4 id="texto">{props.componente.texto}</h4>
+                    <img src= {produto.caminho_imagem} alt="redvelvet" className="imagem" />
+                    <h4 id="texto">{produto.título}</h4>
         
                     <div className="preco_favorito">
-                        <h4 id="texto">{props.componente.preco}</h4>
+                        <h4 id="texto">{produto.preço}</h4>
                         <button className="botaofavorito" onClick={() => handleIconClick(0)}>
                             
                             {clicks.includes(0) ? < FavoriteIcon style={{ color: 'red', fontSize: 32}}/> : <FavoriteBorderIcon  style={{ color: 'black', fontSize: 32}}/>}
