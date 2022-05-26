@@ -53,10 +53,13 @@ function Cadastro() {
     return (
         <div className="pagina1">
             <div className="itens1">
+
                 <div className="Titulo1">
                     <h1>Cadastre-se</h1>
                 </div>
+
                 <div className="retangulo1">
+
                     <div className="campo1">
                         <label>Nome:
                             <input type="text" placeholder="   Seu Nome" onChange={(e) => setNome(e.target.value)} />
@@ -75,8 +78,9 @@ function Cadastro() {
                     </div>
 
                     <div className="campop1">
-                        <label for="palavras">Descrição:</label>
+                        <label for="palavras">Descrição:
                         <input type="text" id="palavras" placeholder="   Use as palavras mais doces..." className="palavras" onChange={(e) => setDescrição(e.target.value)} />
+                        </label>
                     </div>
 
 
@@ -92,7 +96,7 @@ function Cadastro() {
                         </label>
                     </div>
                     <div className="botao1">
-                        <button className="inscreva-se" onClick={cadastrar}> Inscreva-se agora</button>
+                        <button className="inscreva-se1" onClick={cadastrar}> Inscreva-se agora</button>
                     </div>
                 </div>
             </div>
