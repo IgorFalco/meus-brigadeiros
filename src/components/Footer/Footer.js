@@ -15,7 +15,7 @@ function Footer() {
                     <p>Receba as novidades em primeira mão. Cadastre-se</p>
                     <div className="cadastro">
                         <input className="seu-email"
-                            placeholder="Seu melhor email"
+                            placeholder="  Seu melhor email"
                             type="email">
                         </input>
                         <button className="botao-cadastro" onClick={cadastrar}>CADASTRAR</button>

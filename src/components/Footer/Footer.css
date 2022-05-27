@@ -54,6 +54,13 @@
     width: 140px;
     border: none;
     margin-left: -20px;
+    font-weight: 700;
+    color: #9A6B47;
+}
+
+.botao-cadastro:hover {
+    background-color: #966836;
+    color: black;
 }
 
 .elementos-topo p {

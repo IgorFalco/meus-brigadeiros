@@ -32,12 +32,12 @@ function Cadastro() {
     async function erros(e) {
     
         var Senha = document.getElementById("senha").value;
-        var regex = /^(?=(?:.*?[A-Z]){1})(?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&]*$/;
+        var regex = /^(?=(?:.*?[A-Z]){1})(?=(?:.*?[!@#$%*()_+^&}{:;?./]){1})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&?/:.]*$/;
         
         if(Senha.length > 0)  {
             if(Senha.length < 6 || !regex.exec(Senha))
             {
-            document.getElementById("parametros").innerHTML = ("A senha deve conter, no mínimo, 6 caracteres <br>A senha deve conter uma letra maiúscula <br>A senha deve conter um caracter especial")
+            document.getElementById("parametros").innerHTML = ("A senha deve conter, no mínimo, 6 caracteres <br>A senha deve conter uma letra maiúscula <br>A senha deve conter um caractere especial")
             }
             else{
                 document.getElementById("parametros").innerHTML = "";
