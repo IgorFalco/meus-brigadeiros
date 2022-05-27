@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter:wght@300;600&family=Mulish&display=swap');
 .quemsomos {
     display: flex;
     flex-wrap: wrap;
@@ -26,11 +26,11 @@
 
 .paragrafo p {
 
-    font-family: 'Inter', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 31px;
+    font-weight: 100;
+    font-size: 21px;
+    line-height: 35px;
     text-align: justify;
     padding-left: 10%;
     padding-right: 10%;
