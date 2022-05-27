@@ -169,7 +169,29 @@
     background-color: #B38130;
 }
 
-@media (max-width:1400px){
-    .DireitaPagina{
+@media (max-width:1100px){
+    .página {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5%;
+        padding-top: 5%;
+
+    }
+    #separadorMeio {
+        display: none;
+    }
+
+    .DireitaPagina {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0%;
+        padding-left: 10%;
+
+
     }
 } 

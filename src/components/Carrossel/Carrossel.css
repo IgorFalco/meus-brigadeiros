@@ -1,11 +1,59 @@
-.carousel{
+.carousel {
     display: flex;
     max-height: 500px;
     width: 100%;
 }
 
-.carousel-inner{
+.carousel-inner {
     display: flex;
     overflow: hidden;
     width: 100vw;
+}
+
+@media (max-width: 700px) {
+
+    .carousel.slide{
+        display: flex;
+        max-height: 500px;
+        width: 100%;
+    }
+
+    .carousel-inner {
+        display: flex;
+        overflow: hidden;
+        width: 100vh;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .carousel.slide{
+        display: flex;
+        max-height: 500px;
+        width: 130vh;
+    }
+
+    .carousel-inner {
+        display: flex;
+        overflow: hidden;
+        width: 100vh;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .carousel.slide{
+        display: flex;
+        max-height: 500px;
+        width: 120vh;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .carousel.slide{
+        display: flex;
+        max-height: 500px;
+        width: 110vh;
+    }
 }

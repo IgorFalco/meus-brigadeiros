@@ -67,7 +67,7 @@
 #perfil {
     display: flex;
     border-radius: 50%;
-    
+
     size: 20px;
 
     max-width: 200px;
@@ -188,4 +188,41 @@
     display: flex;
     align-items: baseline;
     gap: 5px;
+}
+
+@media (max-width: 1000px) {
+    .paginaCadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .coluna-direita {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    
+        padding-top: 5%;
+        padding-bottom: 5%;
+        gap: 20px;
+
+        width: 60%;
+    }
+
+    .coluna-esquerda {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        width: 40%;
+        gap: 20px;
+    }
+
+
+
 }
